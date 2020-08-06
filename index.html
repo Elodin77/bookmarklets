@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Bookmarklets</title>
+    <h3>Bookmarklets</h3>
+    
+</head>
+<body>
+    <p>Just copy and paste the Javascript code into the url bar and hit enter!</p><br />
+    <hr />
+    <p>Gives everything on a page random orientations.</p>
+    <textarea rows="1" cols="50">
+        javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[prefix + 'transform'] = 'rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())
+    </textarea>
+</body>
+</html>
